@@ -1,0 +1,16 @@
+{
+  "name": "justgratefood",
+  "version": "1.0.0",
+  "description": "Bootstrap Demo Site ",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew De La Paz",
+  "license": "MIT"
+}

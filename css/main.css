@@ -1,0 +1,387 @@
+/* Colors & Time 
+#fb9f89 -- Orange
+#4b3f72 -- Purple
+#417b5a -- dark green
+#21a179 -- lighter green
+Start at 1:57:00*/
+
+.info {
+  background: #21a179;
+}
+
+body {
+  font-family: "Great Vibes", cursive;
+  color: #21a179;
+  background: url(../img/back-img.jpg) center/cover fixed no-repeat;
+}
+
+.primary-color {
+  color: #fb9f89;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.info a {
+  transition: color 2s ease-in-out;
+}
+.info a:hover {
+  color: #000;
+}
+
+/*  Header Section */
+#header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/panini.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+  border-top: 6px dotted #21a179;
+  border-bottom: 6px dotted #21a179;
+  animation: fromLeft;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #fb9f89;
+  font-size: 2rem;
+  border: 2px solid #fb9f89;
+  transition: all 1.5s ease-out;
+}
+
+.main-btn:hover {
+  color: #000;
+  border: 2px solid #21a179;
+  background: #21a179;
+}
+
+.grate-btn {
+  animation: fromRight;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translate(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #21a179;
+  border-radius: 10%;
+  transition: all 1s ease-in;
+  animation: fromBottom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: #fb9f89;
+}
+
+/* Arrow Button Animation */
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Navbar */
+.navbar {
+  background: #21a179;
+  padding: 20px 20px;
+  transition: all 1s ease;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-brand:hover {
+  color: #000;
+  transition: all 1s ease;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: all 2s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #fb9f89;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #fb9f89;
+  border: 2px solid #fb9f89;
+  font-size: 23px;
+  transition: all 2s ease;
+}
+
+.nav-btn:hover {
+  color: #000;
+  border: 2px solid #000;
+  transform: rotate(10deg);
+}
+
+.toggler-btn {
+  border: 2px solid #fb9f89;
+  padding: 5px;
+  transition: all 2s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #fb9f89;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/* Menu Items */
+.item-container {
+  position: relative;
+  /* Link */
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 3s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  color: #fb9f89;
+  border: 3px solid #fb9f89;
+  background: #fb9f89;
+  color: #21a179;
+}
+
+.item-container:hover {
+  outline: 10px solid #21a179;
+  outline-offset: 0.3rem;
+}
+
+/* Menu Items */
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/panini.jpeg) center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid #fb9f89;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #fb9f89;
+  padding: 0 0.4rem;
+}
+/* About Section */
+.about-pictures {
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+}
+
+.img-1 {
+  left: 0%;
+  top: 0%;
+}
+
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+.img-3 {
+  left: 40%;
+  top: 45%;
+}
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.about-image:hover {
+  outline: 6px solid #21a179;
+
+  transform: scale(1.3) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+/* Review */
+.review-item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.review-img {
+  width: 150px;
+}
+
+/* Contact List */
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #21a179;
+}
+
+#contact .input-group-text {
+  background: #21a179;
+  border-color: #21a179;
+  color: #000;
+}
+
+#contact .card input {
+  color: #000;
+}
+
+#contact .card input::placeholder {
+  color: #000;
+}
+
+.contact-btn {
+  color: #21a179;
+  border-color: #21a179;
+  background: transparent;
+  transition: all 2s ease-in;
+}
+
+.contact-btn:hover {
+  background: #fff;
+  color: #21a179;
+  border-color: #fff;
+}
+
+/* Footer */
+#back-to-top {
+  background: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
